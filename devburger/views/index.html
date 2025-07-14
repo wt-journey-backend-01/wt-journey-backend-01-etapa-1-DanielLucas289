@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBurger - Cardápio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <img
+            src="/images/devburger.png"
+            alt="Logo DevBurger"
+            class="logo-img"
+          />
+        </div>
+
+        <h1>Bem-vindo à DevBurger!</h1>
+        <p>Onde cada byte tem sabor.</p>
+        <nav>
+          <a href="/contato" class="btn">Fale Conosco</a>
+          <a href="/api/lanches" class="btn" target="_blank"
+            >Ver API de Lanches</a
+          >
+        </nav>
+      </header>
+
+      <main>
+        <h2>Nosso Cardápio</h2>
+        <p>
+          Explore nosso menu principal no arquivo
+          <a href="/api/lanches" target="_blank">/api/lanches</a>.
+        </p>
+
+        <hr />
+
+        <h2>Sugira um Novo Lanche!</h2>
+        <p>Tem uma ideia genial para um novo burger? Envie para nós!</p>
+
+        <form action="/sugestao" method="GET" class="form-card">
+          <div class="form-group">
+            <label for="nome">Nome do Lanche:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea
+              id="ingredientes"
+              name="ingredientes"
+              rows="4"
+              required
+              placeholder="Ex: Pão, carne, queijo, alface..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Sugestão</button>
+        </form>
+      </main>
+
+      <footer>
+        <p>DevBurger &copy; 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
